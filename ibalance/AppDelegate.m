@@ -3,7 +3,7 @@
 //  ibalance
 //
 //  Created by Sam on 04/11/2012.
-//  Copyright (c) 2012 Sam. All rights reserved.
+//  Copyright (c) 2012 Sam Novotny. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -12,10 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
     return YES;
 }
 

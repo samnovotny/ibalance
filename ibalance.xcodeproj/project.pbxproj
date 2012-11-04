@@ -16,6 +16,9 @@
 		229B89B91645F6FE000A93DA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 229B89B81645F6FE000A93DA /* Default.png */; };
 		229B89BB1645F6FE000A93DA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 229B89BA1645F6FE000A93DA /* Default@2x.png */; };
 		229B89BD1645F6FE000A93DA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 229B89BC1645F6FE000A93DA /* Default-568h@2x.png */; };
+		229B89C41645F7EB000A93DA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229B89C31645F7EB000A93DA /* Storyboard.storyboard */; };
+		229B89C71645F92A000A93DA /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B89C61645F92A000A93DA /* MachineViewController.m */; };
+		229B89CF1645FF82000A93DA /* AddMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B89CE1645FF82000A93DA /* AddMachineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,13 @@
 		229B89B81645F6FE000A93DA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		229B89BA1645F6FE000A93DA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		229B89BC1645F6FE000A93DA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		229B89C31645F7EB000A93DA /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		229B89C51645F92A000A93DA /* MachineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
+		229B89C61645F92A000A93DA /* MachineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineViewController.m; sourceTree = "<group>"; };
+		229B89CB1645FA2C000A93DA /* Machine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Machine.h; sourceTree = "<group>"; };
+		229B89CC1645FA2C000A93DA /* Machine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Machine.m; sourceTree = "<group>"; };
+		229B89CD1645FF81000A93DA /* AddMachineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMachineViewController.h; sourceTree = "<group>"; };
+		229B89CE1645FF82000A93DA /* AddMachineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMachineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				229B89AC1645F6FE000A93DA /* ibalance */,
+				229B89AD1645F6FE000A93DA /* Supporting Files */,
 				229B89A51645F6FE000A93DA /* Frameworks */,
 				229B89A31645F6FE000A93DA /* Products */,
 			);
@@ -80,7 +91,13 @@
 			children = (
 				229B89B51645F6FE000A93DA /* AppDelegate.h */,
 				229B89B61645F6FE000A93DA /* AppDelegate.m */,
-				229B89AD1645F6FE000A93DA /* Supporting Files */,
+				229B89CB1645FA2C000A93DA /* Machine.h */,
+				229B89CC1645FA2C000A93DA /* Machine.m */,
+				229B89C51645F92A000A93DA /* MachineViewController.h */,
+				229B89C61645F92A000A93DA /* MachineViewController.m */,
+				229B89CD1645FF81000A93DA /* AddMachineViewController.h */,
+				229B89CE1645FF82000A93DA /* AddMachineViewController.m */,
+				229B89C31645F7EB000A93DA /* Storyboard.storyboard */,
 			);
 			path = ibalance;
 			sourceTree = "<group>";
@@ -97,6 +114,7 @@
 				229B89BC1645F6FE000A93DA /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = ibalance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +144,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = Sam;
+				ORGANIZATIONNAME = "Sam Novotny";
 			};
 			buildConfigurationList = 229B899C1645F6FE000A93DA /* Build configuration list for PBXProject "ibalance" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -154,6 +172,7 @@
 				229B89B91645F6FE000A93DA /* Default.png in Resources */,
 				229B89BB1645F6FE000A93DA /* Default@2x.png in Resources */,
 				229B89BD1645F6FE000A93DA /* Default-568h@2x.png in Resources */,
+				229B89C41645F7EB000A93DA /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +185,8 @@
 			files = (
 				229B89B31645F6FE000A93DA /* main.m in Sources */,
 				229B89B71645F6FE000A93DA /* AppDelegate.m in Sources */,
+				229B89C71645F92A000A93DA /* MachineViewController.m in Sources */,
+				229B89CF1645FF82000A93DA /* AddMachineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +260,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ibalance/ibalance-Prefix.pch";
 				INFOPLIST_FILE = "ibalance/ibalance-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -250,6 +272,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ibalance/ibalance-Prefix.pch";
 				INFOPLIST_FILE = "ibalance/ibalance-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
