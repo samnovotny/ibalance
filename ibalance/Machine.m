@@ -23,7 +23,6 @@
 }
 
 - (id) setWithName:(NSString *) n weight:(float) w moment:(float) m {
-	self = [self init];
 	self.name = n;
 	self.emptyWeight = w;
 	self.moment = m;

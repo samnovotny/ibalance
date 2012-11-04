@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		229942EB1646105700A00D58 /* Machine.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B89CC1645FA2C000A93DA /* Machine.m */; };
+		229942F316467DEA00A00D58 /* DisplayMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942F216467DEA00A00D58 /* DisplayMachineViewController.m */; };
+		229942F916469D3700A00D58 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942F816469D3700A00D58 /* GraphView.m */; };
 		229B89A71645F6FE000A93DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229B89A61645F6FE000A93DA /* UIKit.framework */; };
 		229B89A91645F6FE000A93DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229B89A81645F6FE000A93DA /* Foundation.framework */; };
 		229B89AB1645F6FE000A93DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229B89AA1645F6FE000A93DA /* CoreGraphics.framework */; };
@@ -22,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		229942F116467DEA00A00D58 /* DisplayMachineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayMachineViewController.h; sourceTree = "<group>"; };
+		229942F216467DEA00A00D58 /* DisplayMachineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayMachineViewController.m; sourceTree = "<group>"; };
+		229942F716469D3700A00D58 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		229942F816469D3700A00D58 /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
 		229B89A21645F6FE000A93DA /* ibalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ibalance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		229B89A61645F6FE000A93DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		229B89A81645F6FE000A93DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -93,10 +100,14 @@
 				229B89B61645F6FE000A93DA /* AppDelegate.m */,
 				229B89CB1645FA2C000A93DA /* Machine.h */,
 				229B89CC1645FA2C000A93DA /* Machine.m */,
+				229942F716469D3700A00D58 /* GraphView.h */,
+				229942F816469D3700A00D58 /* GraphView.m */,
 				229B89C51645F92A000A93DA /* MachineViewController.h */,
 				229B89C61645F92A000A93DA /* MachineViewController.m */,
 				229B89CD1645FF81000A93DA /* AddMachineViewController.h */,
 				229B89CE1645FF82000A93DA /* AddMachineViewController.m */,
+				229942F116467DEA00A00D58 /* DisplayMachineViewController.h */,
+				229942F216467DEA00A00D58 /* DisplayMachineViewController.m */,
 				229B89C31645F7EB000A93DA /* Storyboard.storyboard */,
 			);
 			path = ibalance;
@@ -187,6 +198,9 @@
 				229B89B71645F6FE000A93DA /* AppDelegate.m in Sources */,
 				229B89C71645F92A000A93DA /* MachineViewController.m in Sources */,
 				229B89CF1645FF82000A93DA /* AddMachineViewController.m in Sources */,
+				229942EB1646105700A00D58 /* Machine.m in Sources */,
+				229942F316467DEA00A00D58 /* DisplayMachineViewController.m in Sources */,
+				229942F916469D3700A00D58 /* GraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +311,7 @@
 				229B89C21645F6FE000A93DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
