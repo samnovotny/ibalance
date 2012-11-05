@@ -107,7 +107,7 @@
     + (self.fuel.text.intValue * 6 * 30.6 / 48.9 * self.machine.armMainFuel)
     + (self.fuel.text.intValue * 6 * 18.3 / 48.9 * self.machine.armAuxFuel);
     
-    self.mass.text =[NSString stringWithFormat:@"%5.0f", weight];
+    self.mass.text =[NSString stringWithFormat:@"%5.0f lb", weight];
 	if (weight > self.machine.maxWeight) {
 		self.mass.textColor = [UIColor redColor];
 	}
@@ -115,7 +115,7 @@
 		self.mass.textColor = [UIColor blackColor];
 	}
     
-	self.cog.text = [NSString stringWithFormat:@"%3.1f", (moment / weight)];
+	self.cog.text = [NSString stringWithFormat:@"%3.1f\"", (moment / weight)];
     self.fuelLitres.text = [NSString stringWithFormat:@"%0.1f litres", self.fuel.text.intValue / 0.26417205 ];
 
 	[self.graphView setArm:(moment / weight) andWeight:weight forFuel:TRUE];

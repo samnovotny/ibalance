@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) NSMutableArray *listOfachines;
 @property (assign, nonatomic) int selectedRow;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
 
 @end
 
@@ -37,8 +38,33 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+    self.title = @"iBalance";
     [self restoreState];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults boolForKey:@"acceptedTerms"]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning"
+                                                        message:@"Please note, this utility is intended as quick reference to checking weight and balance calculations for a R44 Raven II. It should not be used for critical weight and balance calculations. By accepting these terms you agree to accept the risk of inaccuracies."
+                                                       delegate:self
+                                              cancelButtonTitle:@"Cancel"
+                                              otherButtonTitles:@"Accept", nil];
+        [alert show];
+    }
+    else {
+        self.addButton.enabled = YES;
+    }
+
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setBool:YES forKey:@"acceptedTerms"];
+        self.addButton.enabled = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,6 +115,7 @@
         // Delete the row from the data source
         [self.listOfachines removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [self saveState];
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view

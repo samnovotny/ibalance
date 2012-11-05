@@ -10,6 +10,8 @@
 
 @interface AddMachineViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *copyright;
+
 @end
 
 @implementation AddMachineViewController
@@ -35,6 +37,7 @@
         self.bem.text = [NSString stringWithFormat:@"%.0f", self.machine.emptyWeight];
         self.arm.text = [NSString stringWithFormat:@"%.0f", self.machine.moment];
     }
+    self.copyright.text = [self appNameAndVersionNumberDisplayString];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,6 +51,15 @@
                        weight:[self.bem.text floatValue]
                        moment:[self.arm.text floatValue]];
     [self.delegate saveMachineInfo:self.machine];
+}
+
+- (NSString *)appNameAndVersionNumberDisplayString {
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+//    NSString *appDisplayName = [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    NSString *majorVersion = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+//    NSString *minorVersion = [infoDictionary objectForKey:@"CFBundleVersion"];
+    
+    return [NSString stringWithFormat:@"© 2009 - 2012 Sam Novotny - V %@", majorVersion];
 }
 
 @end

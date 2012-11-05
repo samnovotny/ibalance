@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22427C751648750C0057AB57 /* iconSM.png in Resources */ = {isa = PBXBuildFile; fileRef = 22427C741648750C0057AB57 /* iconSM.png */; };
+		22427C77164875190057AB57 /* iconLG.png in Resources */ = {isa = PBXBuildFile; fileRef = 22427C76164875190057AB57 /* iconLG.png */; };
 		229942EB1646105700A00D58 /* Machine.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B89CC1645FA2C000A93DA /* Machine.m */; };
 		229942F316467DEA00A00D58 /* DisplayMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942F216467DEA00A00D58 /* DisplayMachineViewController.m */; };
 		229942F916469D3700A00D58 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942F816469D3700A00D58 /* GraphView.m */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22427C741648750C0057AB57 /* iconSM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconSM.png; sourceTree = "<group>"; };
+		22427C76164875190057AB57 /* iconLG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconLG.png; sourceTree = "<group>"; };
 		229942F116467DEA00A00D58 /* DisplayMachineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayMachineViewController.h; sourceTree = "<group>"; };
 		229942F216467DEA00A00D58 /* DisplayMachineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayMachineViewController.m; sourceTree = "<group>"; };
 		229942F716469D3700A00D58 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		229B89971645F6FE000A93DA = {
 			isa = PBXGroup;
 			children = (
+				22427C76164875190057AB57 /* iconLG.png */,
+				22427C741648750C0057AB57 /* iconSM.png */,
 				229B89AC1645F6FE000A93DA /* ibalance */,
 				229B89AD1645F6FE000A93DA /* Supporting Files */,
 				229B89A51645F6FE000A93DA /* Frameworks */,
@@ -184,6 +190,8 @@
 				229B89BB1645F6FE000A93DA /* Default@2x.png in Resources */,
 				229B89BD1645F6FE000A93DA /* Default-568h@2x.png in Resources */,
 				229B89C41645F7EB000A93DA /* Storyboard.storyboard in Resources */,
+				22427C751648750C0057AB57 /* iconSM.png in Resources */,
+				22427C77164875190057AB57 /* iconLG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
