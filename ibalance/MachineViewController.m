@@ -15,6 +15,7 @@
 @property (strong, nonatomic) NSMutableArray *listOfachines;
 @property (assign, nonatomic) int selectedRow;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
+@property (strong, nonatomic) UITapGestureRecognizer *tabRecogniser;
 
 @end
 
@@ -40,10 +41,16 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.title = @"iBalance";
     [self restoreState];
+    self.tabRecogniser = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapHandler:)];
+    [self.view addGestureRecognizer:self.tabRecogniser];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    [self tapHandler:nil];
+}
+
+- (void)tapHandler:(id)sender {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if (![defaults boolForKey:@"acceptedTerms"]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning"
@@ -55,8 +62,8 @@
     }
     else {
         self.addButton.enabled = YES;
-    }
-
+        [self.view removeGestureRecognizer:self.tabRecogniser];
+    }    
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -64,6 +71,7 @@
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setBool:YES forKey:@"acceptedTerms"];
         self.addButton.enabled = YES;
+        [self.view removeGestureRecognizer:self.tabRecogniser];
     }
 }
 

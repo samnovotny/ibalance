@@ -27,8 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22427C741648750C0057AB57 /* iconSM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconSM.png; sourceTree = "<group>"; };
-		22427C76164875190057AB57 /* iconLG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconLG.png; sourceTree = "<group>"; };
+		22427C741648750C0057AB57 /* iconSM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconSM.png; path = ../iconSM.png; sourceTree = "<group>"; };
+		22427C76164875190057AB57 /* iconLG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconLG.png; path = ../iconLG.png; sourceTree = "<group>"; };
 		229942F116467DEA00A00D58 /* DisplayMachineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayMachineViewController.h; sourceTree = "<group>"; };
 		229942F216467DEA00A00D58 /* DisplayMachineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayMachineViewController.m; sourceTree = "<group>"; };
 		229942F716469D3700A00D58 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
@@ -72,8 +72,6 @@
 		229B89971645F6FE000A93DA = {
 			isa = PBXGroup;
 			children = (
-				22427C76164875190057AB57 /* iconLG.png */,
-				22427C741648750C0057AB57 /* iconSM.png */,
 				229B89AC1645F6FE000A93DA /* ibalance */,
 				229B89AD1645F6FE000A93DA /* Supporting Files */,
 				229B89A51645F6FE000A93DA /* Frameworks */,
@@ -122,6 +120,8 @@
 		229B89AD1645F6FE000A93DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				22427C76164875190057AB57 /* iconLG.png */,
+				22427C741648750C0057AB57 /* iconSM.png */,
 				229B89AE1645F6FE000A93DA /* ibalance-Info.plist */,
 				229B89AF1645F6FE000A93DA /* InfoPlist.strings */,
 				229B89B21645F6FE000A93DA /* main.m */,
